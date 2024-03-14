@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/shared.css">
+    <link rel="stylesheet" href="/stylesheets/home.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="left">
+        <ul class="component-list">
+            <li><a href="/feed?style=text">Text</a></li>
+            <li><a href="/feed?style=image">Image</a></li>
+            <li><a href="/feed?style=video">Videos</a></li>
+            <li><a href="/feed?style=swipe">Swipe</a></li>
+            <li><a href="/feed?style=group">Group</a></li>
+            <li><a href="/feed?style=message">Message</a></li>
+        </ul>
+        <div class="account">
+
+        </div>
+    </div>
+    <div class="right">
+        <div class="posts">
+        </div>
+    </div>
+    <script>
+        const type = "<%= type %>"
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generic Social</title>
+    <link rel="stylesheet" href="/stylesheets/shared.css">
+    <link rel="stylesheet" href="/stylesheets/index.css">
+</head>
+
+<body>
+    <div id="main">
+        <div class="head">
+            <h1>social.</h1>
+            <p>the new age of <span class="highlight">simplicity</span></p>
+            <% if(message) { %>
+                <p class="err-msg"><%= message %></p>
+            <% } %>
+        </div>
+        <div class="main">
+            <div class="left">
+                <form action="/auth/register/local" method="post" id="form">
+                    <input type="text" pattern=".+" name="username" id="username" placeholder="username">
+                    <input type="password" pattern=".+" name="password" id="password" placeholder="password">
+                    <button type="login" formaction="/auth/local">login.</button>
+                    <button type="join"  formaction="/auth/register/local">join.</button>
+                </form>
+            </div>
+            <div class="right">
+                <p class="italic inactive">or sign in using...</p>
+                <button class="brand-btn spotify-btn">Spotify</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Archivo', sans-serif;
+}
+
+h1,h2,h3 {
+    font-family: 'Archivo Black';
+}
+
+:root {
+    --background: #F1EEF2;
+    --color: #000;
+    --mid: #05050A8F;
+    --foreground: #EEE3F2;
+    --highlight: #5F1A74;
+}
+
+
+.err-msg {
+    color: lightcoral;
+    font-style: italic;
+    font-size: 0.5em;
+}
+
+.inactive {
+    color: var(--mid)
+}
+
+body, html {
+    width: 100vw;
+    height: 100vh;
+    background: var(--background);
+}
+
+.btn, button {
+    background: var(--highlight);
+    color: var(--background);
+    outline: none;
+    border: none;
+    padding: 1em;
+    font-size: 1em;
+    border-radius: 0.5em;
+}
+
+.brand-btn {
+    padding: 0.5em;
+    width: 25%;
+    margin: 1em;
+}
+
+.spotify-btn {
+    color: lime;
+    background: black;
+    font-family: 'Archivo Black';
+}
+
+.highlight {
+    color: var(--highlight);
+}
+
+.highlight-bg {
+    background: var(--highlight);
+}
+
+.italic {
+    font-style: italic;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    background: var(--background);
+    color: var(--color);
+}
